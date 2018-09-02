@@ -37,9 +37,12 @@ Setup your name and email
 
 
  To clone existing repo
-    > git clone repo-url folder-path    
+ 
+  > git clone repo-url folder-path    
+ 
  To create repo in folder-path
-    > git init folder-path	
+ 
+ > git init folder-path	
 
 
 ## 2. Git Basic commands
