@@ -32,3 +32,43 @@ Setup your name and email
 ### 1.3 Verify Settings
 
 > git config --global -list
+
+## 2 Git repos
+
+### 2.1 Creating repo
+>
+>
+To clone existing repo
+      > git clone repo-url folder-path    
+
+
+To create repo in folder-path
+      > git init folder-path	
+>
+>
+## 2. Git Basic commands
+
+<a name="removing-local-files"></a>
+
+### 2.1 Removing local files
+
+To Dry run, what will be deleted
+	> git clean -n -d or (-nd)	
+To interactive deletion
+	> git clean -i
+To remove directories
+    >git clean -f -d or (-fd)
+To remove directories from submodules
+    >git clean -f -f -d or (-ffd)
+    
+To remove ignored files
+	> git clean -f -X or (-fX)
+	
+To remove ignored and non-ignored files
+	> git clean -f -x or (-fx)
+	
+
+
+
+
+
