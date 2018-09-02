@@ -49,13 +49,14 @@ Setup your name and email
 ### 2.1 Removing local files
 
 To Dry run, what will be deleted
-> git clean -n -d or (-nd)	
+> git clean -n -d or (-nd)
+
 To interactive deletion
-> git clean -i
+    > git clean -i
 To remove directories
-> git clean -f -d or (-fd)
+    > git clean -f -d or (-fd)
 To remove directories from submodules
-> git clean -f -f -d or (-ffd)
+    > git clean -f -f -d or (-ffd)
     
 To remove ignored files
 > git clean -f -X or (-fX)
@@ -64,27 +65,27 @@ To remove ignored and non-ignored files
 > git clean -f -x or (-fx)
 ### 2.2 Staging/UnStaging files
 	
-To stage all files in index
-> git add .
+To stage all files in index 
+   > git add .
 To stage particular file in index
-> git add some-file.txt
+   > git add some-file.txt
 Add -f flag, if files are ignored by .gitignore
-> git add -f some-ignored-file.txt
+    > git add -f some-ignored-file.txt
 	
 To unstage files from index
-> git reset
-> git reset HAED -- some-file.txt
+    > git reset
+    > git reset HAED -- some-file.txt
 	
 To reset changed files and (remove new files if staged)
 > git reset --hard
 	
 To remove unwanted file from git index (but keep file on disk)
 > git rm --cached some-file.txt
-> git rm -r --cached some-directory/
+    > git rm -r --cached some-directory/
 	
 Discard changes in the working directory
 > git checkout -- file.txt
-> git checkout -- .
+   > git checkout -- .
 	
 ### 2.3 Git Diff	
 	
@@ -116,6 +117,32 @@ To view last 3 commits
 To view commits with differences (--patch)
 > git log -p -n 3
 	
+## 3. Working with branches
+
+<a name="git branches"></a>
+
+### 3.1 Creating/Deleting branches
+
+To list all branches
+   > git branch  (-a for remote branches)
+	
+To create branch named br-1
+   > git branch br-1
+	
+To create branch named br-2 and checkout
+   > git branch br-2
+	
+To switch branch
+   > git checkout branch2
+	
+To delete branch
+   > git branch -d branch-name (-D to forcefully delete)
+	
+To delete remote branch
+  > git push origin :branch-name	
+
+
+
 	
 
 
