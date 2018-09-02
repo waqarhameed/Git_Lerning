@@ -53,27 +53,38 @@ To Dry run, what will be deleted
 
 To interactive deletion
     > git clean -i
+    
 To remove directories
-    > git clean -f -d or (-fd)
+ > git clean -f -d or (-fd)
+
 To remove directories from submodules
-    > git clean -f -f -d or (-ffd)
+
+> git clean -f -f -d or (-ffd)
     
 To remove ignored files
+
 > git clean -f -X or (-fX)
 	
 To remove ignored and non-ignored files
+
 > git clean -f -x or (-fx)
+
 ### 2.2 Staging/UnStaging files
 	
 To stage all files in index 
    > git add .
+
 To stage particular file in index
-   > git add some-file.txt
+
+> git add some-file.txt
+
 Add -f flag, if files are ignored by .gitignore
-    > git add -f some-ignored-file.txt
+
+> git add -f some-ignored-file.txt
 	
 To unstage files from index
-    > git reset
+   
+   > git reset
     > git reset HAED -- some-file.txt
 	
 To reset changed files and (remove new files if staged)
